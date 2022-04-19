@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Corrida de Carros</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="/lib/p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+    //código que conecta o jogo no banco de dados do firebase
+
+     const firebaseConfig = {
+    apiKey: "AIzaSyDBnQUlgUTBQm5OeZp4tuZiXLdI6CWccoU",
+    authDomain: "jogo-de-carro-412da.firebaseapp.com",
+    databaseURL: "https://jogo-de-carro-412da-default-rtdb.firebaseio.com",
+    projectId: "jogo-de-carro-412da",
+    storageBucket: "jogo-de-carro-412da.appspot.com",
+    messagingSenderId: "930623844306",
+    appId: "1:930623844306:web:fe5516bf2718d883a6a20b",
+    measurementId: "G-CCCR12F947"
+    };
+
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Game.js"></script>
+    <script src="./js/Player.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
